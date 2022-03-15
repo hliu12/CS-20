@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Api</title>
+    <style>
+      #fact-header {
+        font-size: 20px;
+        text-decoration: underline;
+        margin-top: 20px;
+      }
+      #cat-fact {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 600px;
+        height: 100px;
+        background-color: pink;
+        text-align: center;
+        line-height: 100px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-weight: bold;
+      }
+      .api-fact {
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="button-div">
+        <button onclick="ajaxCatCall()">Get Fact (AJAX)</button>
+        <button onclick="fetchCatFact()">Get Fact (fetch)</button>
+      </div>
+      <div id="fact-header">Cat Fact</div>
+      <div id="cat-fact">Press a button to get a cat fact</div>
+    </div>
+    <hr />
+    <div id="api-info">
+      <div class="api-fact"><b>Api selected:</b> Cat fact api</div>
+      <div class="api-fact"><b>API Website:</b> https://catfact.ninja/</div>
+      <div class="api-fact"><b>API options:</b> Max Length (chars): 100</div>
+      <div class="api-fact">
+        <b>Applications:</b> This API could be used as a fun embelleshment to a
+        website about cats or could also be used in a trivia app.
+      </div>
+    </div>
+    <script src="catApi.js"></script>
+  </body>
+</html>

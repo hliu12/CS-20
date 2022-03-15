@@ -1,0 +1,230 @@
+/* General link styles */
+a {
+  margin: 7px;
+  color: rgb(0, 151, 13);
+  font-weight: 520;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 20px;
+}
+
+a:hover {
+  /* text-decoration: underline; */
+  color: rgba(40, 170, 116, 0.623);
+}
+
+.form label {
+  display: block;
+}
+
+body {
+  background-image: url("./WebBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.logo {
+  display: block;
+}
+
+.menu-item {
+  display: block;
+  position: relative;
+  width: auto;
+}
+
+/* Header Navbar */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 110px 110px 110px;
+  grid-template-rows: 75px;
+  grid-template-areas: ". about contact services";
+  position: fixed;
+  align-items: center;
+  top: 0;
+  width: calc(100% - 50px);
+}
+
+/* .header:hover {
+  color: rgba(102, 253, 190, 0.623);
+} */
+
+#company-logo {
+  justify-self: center;
+  align-self: center;
+  object-fit: contain;
+  width: 150px;
+  margin-left: 15px;
+}
+
+#about {
+  font-weight: bold;
+  grid-area: about;
+  justify-self: center;
+  align-self: center;
+}
+
+#services {
+  font-weight: bold;
+  grid-area: services;
+  justify-self: center;
+  align-self: center;
+}
+
+#contact {
+  font-weight: bold;
+  grid-area: contact;
+  justify-self: center;
+  align-self: center;
+}
+
+#header-line {
+  color: black;
+}
+
+/* Main - Logo, Search Box and Buttons */
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "."
+    "main-info"
+    ".";
+  /* margin: 100px; */
+  width: 100vw;
+  height: 100vh;
+}
+
+#main-info {
+  grid-area: main-info;
+  width: 450px;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+#contact-main {
+  display: flex;
+  grid-area: main-info;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+#flexheaders {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+@media all and (max-width: 900px) {
+  #pic-div {
+    display: none;
+  }
+}
+
+#motto {
+  display: block;
+  font-family: "Tahoma", "Arial", sans-serif;
+  font-weight: lighter;
+  font-size: 55px;
+  color: rgb(0, 226, 11);
+}
+
+#business-info-text {
+  display: block;
+  font-family: "Tahoma", "Arial", sans-serif;
+  font-size: 20px;
+  color: rgb(0, 126, 21);
+}
+
+.service-text {
+  font-family: "Tahoma", "Arial", sans-serif;
+  font-size: 20px;
+  color: rgb(0, 126, 21);
+  padding-right: 20px;
+}
+
+.subheading {
+  font-family: "Tahoma", "Arial", sans-serif;
+  color: rgb(0, 126, 21);
+  width: 170px;
+}
+
+.subflex {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-pic {
+  grid-area: contact-pic;
+  display: inline-block;
+  width: 150px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+/* Footer Navbar */
+.footer a {
+  font-size: 15px;
+}
+
+.footer {
+  display: grid;
+  background-color: #deb6ff;
+  /* border: 1px solid #e4e4e4; */
+  border-top: 1px solid lightgray;
+  color: gray;
+  grid-template-columns: 23px 100px 100px 150px 1fr 75px 75px 85px 20px;
+  grid-template-rows: 43px;
+  grid-template-areas: ". advertising business how. privacy terms settings .";
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#advertising {
+  grid-area: advertising;
+  justify-self: center;
+  align-self: center;
+}
+
+#business {
+  grid-area: business;
+  justify-self: center;
+  align-self: center;
+}
+
+#privacy {
+  grid-area: privacy;
+  justify-self: center;
+  align-self: center;
+}
+
+#terms {
+  grid-area: terms;
+  justify-self: center;
+  align-self: center;
+}
+
+#settings {
+  grid-area: settings;
+  justify-self: center;
+  align-self: center;
+  margin-right: 10px;
+}

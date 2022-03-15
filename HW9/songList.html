@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Songlist</title>
+    <style>
+      body {
+        background-color: rgb(223, 207, 190);
+      }
+
+      h1 {
+        margin: 12px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+      }
+
+      #form-div {
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        border: 2px solid rgb(160, 0, 8);
+      }
+
+      label {
+        margin-right: 10px;
+      }
+
+      input {
+        margin-left: 10px;
+      }
+
+      #song-container {
+        margin-top: 20px;
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        /* padding: 10px; */
+      }
+      .song {
+        width: 300px;
+        height: 100px;
+        border: 2px solid rgb(160, 0, 8);
+        margin: 10px;
+        padding: 10px;
+      }
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-bottom: 5px;
+      }
+      #json-desc {
+        font-size: 16px;
+        text-decoration: underline;
+        font-weight: bold;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JSON Song List</h1>
+
+    <div id="form-div">
+      <form action="">
+        <label for="genreSelect">Select Genre: </label>
+        <select name="genreSelect" id="genreSelect">
+          <option value="All Songs">All Songs</option>
+          <option value="Pop">Pop</option>
+          <option value="Dance">Dance</option>
+          <option value="Indie">Indie</option>
+          <option value="Alternative">Alternative</option>
+          <option value="R&B">R&B</option>
+          <option value="Soul">Soul</option>
+          <option value="Reggae">Reggae</option>
+          <option value="Hip-Hop">Hip-Hop</option>
+        </select>
+
+        <input type="button" value="Filter" onclick="filter()" />
+      </form>
+    </div>
+
+    <hr />
+
+    <div id="song-container"></div>
+
+    <hr />
+
+    <div id="json-desc">JSON in raw string form:</div>
+    <div id="raw-json" style="margin: 20px"></div>
+
+    <script type="text/javascript" src="songList.json"></script>
+    <script type="text/javascript" src="songList.js"></script>
+  </body>
+</html>

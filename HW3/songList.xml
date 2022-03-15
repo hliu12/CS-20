@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="xmlstyles.css"?>
+<songlist>
+    <song>
+        <title>Shut Up and Dance</title>
+        <artist>WALK THE MOON</artist>
+        <genre>
+            <genre1>Pop</genre1>
+            <genre2>Dance</genre2>
+        </genre>
+        <year>2014</year>
+    </song>
+    <song>
+        <title>Marry You</title>
+        <artist>Bruno Mars</artist>
+        <genre>
+            <genre1>Pop</genre1>
+        </genre>
+        <year>2011</year>
+    </song>
+    <song>
+        <title>Thinking Out Loud</title>
+        <artist>Ed Sheeran</artist>
+        <genre>
+            <genre1>Pop</genre1>
+        </genre>
+        <year>2014</year>
+    </song>
+    <song>
+        <title>Nothing</title>
+        <artist>Bruno Major</artist>
+        <genre>
+            <genre1>Indie</genre1>
+            <genre2>Alternative</genre2>
+        </genre>
+        <year>2016</year>
+    </song>
+    <song>
+        <title>Home</title>
+        <artist>Bruno Major</artist>
+        <genre>
+            <genre1>Indie</genre1>
+            <genre2>Alternative</genre2>
+        </genre>
+        <year>2016</year>
+    </song>
+    <song>
+        <title>I Wanna Dance with Somebody</title>
+        <artist>Whitney Houston</artist>
+        <genre>
+            <genre1>R&#38;B</genre1>
+            <genre2>Pop</genre2>
+        </genre>
+        <year>1987</year>
+    </song>
+    <song>
+        <title>All of Me</title>
+        <artist>John Legend</artist>
+        <genre>
+            <genre1>Soul</genre1>
+            <genre2>R&#38;B</genre2>
+        </genre>
+        <year>2013</year>
+    </song>
+    <song>
+        <title>I'm Yours</title>
+        <artist>Jason Mraz</artist>
+        <genre>
+            <genre1>Regae</genre1>
+            <genre2>Pop</genre2>
+        </genre>
+        <year>2008</year>
+    </song>
+    <song>
+        <title>No Scrubs</title>
+        <artist>TLC</artist>
+        <genre>
+            <genre1>Hip-Hop</genre1>
+        </genre>
+        <year>1999</year>
+    </song>
+    <song>
+        <title>Please Me</title>
+        <artist>Bruno Mars</artist>
+        <genre>
+            <genre1>Hip-Hop</genre1>
+        </genre>
+        <year>2019</year>
+    </song>
+</songlist>

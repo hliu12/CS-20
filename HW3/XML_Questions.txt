@@ -1,0 +1,14 @@
+Henry Liu
+CS 20
+
+XML Questions
+_______________________
+
+Case Study for XML:
+
+Tufts University wants to manage its student's information including first name, last name, student ID and date of birth.
+XML would be able to neatly hold this information using custom tags and the parent/child structure
+
+I think XML is an ok way to hold data but it seems a little scary to have all the power
+to name the data myself. I also like JSON a bit better as it seems more familiar to me
+and seems to be more compatable with Javascript.

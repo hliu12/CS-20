@@ -1,0 +1,25 @@
+.table-container {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-row {
+  display: flex;
+}
+
+.table-cell {
+  border: 1px solid black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+#header {
+  margin-left: 30px;
+  text-shadow: 2px red;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

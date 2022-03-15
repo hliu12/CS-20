@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mass Lottery</title>
+    <link rel="stylesheet" href="lottery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="header">Mass Lottery</h1>
+
+    <div id="main-container">
+      <div id="lottery-balls">
+        <div id="button-div">
+          <button id="ball-button" onclick="runLottery()" type="submit">
+            Get Balls!
+          </button>
+        </div>
+        <div class="table-row">
+          <div class="ball-desc">
+            <p>Today's Winning Balls:</p>
+          </div>
+          <div class="balls">
+            <div class="ball">
+              <p class="ball-num">12</p>
+            </div>
+            <div class="ball">
+              <p class="ball-num">15</p>
+            </div>
+            <div class="ball">
+              <p class="ball-num">24</p>
+            </div>
+            <div class="ball">
+              <p class="ball-num">35</p>
+            </div>
+            <div class="ball">
+              <p class="ball-num">48</p>
+            </div>
+            <div class="lucky ball">
+              <p class="ball-num">3</p>
+            </div>
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="ball-desc">
+            <p>Your picked balls:</p>
+          </div>
+          <div class="balls">
+            <div class="ball">
+              <p id="picked1" class="ball-num"></p>
+            </div>
+            <div class="ball">
+              <p id="picked2" class="ball-num"></p>
+            </div>
+            <div class="ball">
+              <p id="picked3" class="ball-num"></p>
+            </div>
+            <div class="ball">
+              <p id="picked4" class="ball-num"></p>
+            </div>
+            <div class="ball">
+              <p id="picked5" class="ball-num"></p>
+            </div>
+            <div class="lucky ball">
+              <p id="picked-lucky" class="ball-num"></p>
+            </div>
+          </div>
+        </div>
+        <div id="sort-div">
+          <button id="sort-button" onClick="sortBalls()">Sort Balls</button>
+        </div>
+        <div id="draw-info">
+          <div id="num-matches"></div>
+          <div id="lucky-info"></div>
+        </div>
+        <div id="winnings"></div>
+      </div>
+    </div>
+
+    <script src="lottery.js"></script>
+  </body>
+</html>

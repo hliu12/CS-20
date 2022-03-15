@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="styles.css" rel="stylesheet" />
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      #pic-div {
+        /* display: none; */
+        align-self: center;
+        order: 2;
+        margin-left: auto;
+      }
+
+      #pic-div img {
+        width: 350px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Top Navbar -->
+    <nav>
+      <ul class="header">
+        <li class="logo">
+          <a href="index.html"
+            ><img
+              id="company-logo"
+              src="https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-1.png"
+              alt="company logo"
+          /></a>
+        </li>
+        <li class="menu-item"><a href="#" id="about">About</a></li>
+        <li class="menu-item">
+          <a href="contact.html" id="contact">Contact</a>
+        </li>
+        <li class="menu-item">
+          <a id="services" href="services.html">Services</a>
+        </li>
+        <!-- <li class="toggle">
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </li> -->
+      </ul>
+    </nav>
+    <!-- <hr id="header-line" /> -->
+
+    <!-- Main info -->
+    <div class="main">
+      <div id="contact-main">
+        <div id="contact-info">
+          <h1 id="motto">Contact Us</h1>
+          <p id="business-info-text">
+            Leave your email to recieve our monthly newsletter and special deals
+            and discounts!
+          </p>
+          <div class="form">
+            <form action="/" method="post">
+              <input
+                id="email"
+                type="text"
+                name="email"
+                placeholder="Email"
+                onKeyup="checkform()"
+                required
+              />
+              <input id="submit-button" type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+
+        <div id="pic-div">
+          <img
+            src="https://media.istockphoto.com/vectors/man-in-call-center-support-customer-support-answering-questions-vector-id1290300704?b=1&k=20&m=1290300704&s=612x612&w=0&h=t_kRmQV4nDlx5AT0nRIT6l9kO0-auH0Me4askf-upnQ="
+            alt="Contact Dude"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navbar -->
+    <div class="footer">
+      <a href="#" id="advertising">Advertising</a>
+      <a href="#" id="business">Business</a>
+      <a href="#" id="privacy">Privacy</a>
+      <a href="#" id="terms">Terms</a>
+      <a href="#" id="settings">Settings</a>
+    </div>
+  </body>
+</html>

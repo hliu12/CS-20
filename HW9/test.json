@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Emily",
+    "artist": "Joanna Newsom",
+    "genre": ["Progressive Folk", "Chamber Folk", "Singer/Songwriter"],
+    "album": "Ys",
+    "year": "2006",
+    "pic": "Ys.jpeg"
+  },
+  {
+    "title": "Beach Life in Death",
+    "artist": "Car Seat Headrest",
+    "genre": ["Indie Rock", "Lo-Fi"],
+    "album": "Twin Fantasy",
+    "year": "2011",
+    "pic": "TwinFantasy.jpeg"
+  },
+  {
+    "title": "Range Life",
+    "artist": "Pavement",
+    "genre": ["Indie Rock", "Lo-Fi"],
+    "album": "Crooked Rain, Crooked Rain",
+    "year": "1994",
+    "pic": "CrookedRainCrookedRain.jpeg"
+  },
+  {
+    "title": "Sycamore",
+    "artist": "Bill Callahan",
+    "genre": ["Singer/Songwriter", "Alt-Country"],
+    "album": "Woke on a Whaleheart",
+    "year": "2007",
+    "pic": "WokeOnAWhaleheart.jpeg"
+  },
+  {
+    "title": "Voice in Headphones",
+    "artist": "Mount Eerie",
+    "genre": ["Singer/Songwriter", "Indie Folk"],
+    "album": "Lost Wisdom",
+    "year": "2008",
+    "pic": "LostWisdom.jpeg"
+  },
+  {
+    "title": "Carry Me Ohio",
+    "artist": "Sun Kil Moon",
+    "genre": ["Folk Rock", "Singer/Songwriter"],
+    "album": "Ghosts of the Great Highway",
+    "year": "2003",
+    "pic": "GhostsOfTheGreatHighway.jpeg"
+  },
+  {
+    "title": "Nowhere",
+    "artist": "Thanksgiving",
+    "genre": ["Contemporary Folk", "Indie Folk"],
+    "album": "Welcome Nowhere",
+    "year": "2004",
+    "pic": "WelcomeNowhere.jpeg"
+  },
+  {
+    "title": "For the Widows in Paradise, For the Fatherless in Ypsilanti",
+    "artist": "Sufjan Stevens",
+    "genre": ["Chamber Folk", "Singer/Songwriter", "Indie Folk"],
+    "album": "Michigan",
+    "year": "2003",
+    "pic": "Michigan.jpeg"
+  },
+  {
+    "title": "Golden Boy",
+    "artist": "The Mountain Goats",
+    "genre": ["Singer/Songwriter", "Contemporary Folk", "Indie Folk", "Lo-Fi"],
+    "album": "Ghana",
+    "year": "2002",
+    "pic": "Ghana.jpeg"
+  },
+  {
+    "title": "In The Aeroplae Over the Sea",
+    "artist": "Neutral Milk Hotel",
+    "genre": ["Indie Rock", "Indie Folk"],
+    "album": "In The Aeroplae Over the Sea",
+    "year": "1998",
+    "pic": "InTheAeroplaneOverTheSea.jpeg"
+  },
+  {
+    "title": "Good Intentions Paving Company",
+    "artist": "Joanna Newsom",
+    "genre": ["Chamber Folk", "Singer/Songwriter", "Progressive Folk"],
+    "album": "Have One on Me",
+    "year": "2010",
+    "pic": "HaveOneOnMe.jpeg"
+  },
+  {
+    "title": "Farewell Transmission",
+    "artist": "Songs: Ohia",
+    "genre": ["Folk Rock", "Alt-Country"],
+    "album": "The Magnolia Electric Co.",
+    "year": "2003",
+    "pic": "TheMagnoliaElectricCo.jpeg"
+  }
+]

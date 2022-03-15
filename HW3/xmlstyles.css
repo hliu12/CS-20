@@ -1,0 +1,42 @@
+songlist {
+  display: flex;
+  flex-direction: column;
+  color: darkgray;
+  background-color: rgb(253, 240, 255);
+  width: 100%;
+}
+
+song {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  background-color: rgb(255, 221, 242);
+  font-size: 40px;
+  margin: 15px;
+  border: 1.5px solid black;
+  padding: 5px;
+}
+
+title {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+artist {
+  font-size: 25px;
+}
+
+genre {
+  display: flex;
+}
+
+genre1,
+genre2 {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+year {
+  font-size: 25px;
+}
