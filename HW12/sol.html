@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<link
+  href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Vampiro One"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat&display=swa p"
+  rel="stylesheet"
+/>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Jade Delight</title>
+    <style>
+      body {
+        font-family: "Montserrat";
+        background-color: #bce3cc;
+        margin-left: 28%;
+        margin-right: 28%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        border-radius: 50px;
+        align-items: center;
+        vertical-align: center;
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+        font-size: 30pt;
+        font-family: "Vampiro One";
+        border-style: double;
+        border-spacing: 50px;
+        border-width: 5px;
+        border-color: #4eb782;
+      }
+      h2 {
+        font-family: "Montserrat";
+        font-size: 10pt;
+      }
+      p {
+        font-size: 14pt;
+        align-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script language="javascript">
+      function printValues() {
+        /* if any menu item is selected, updates all fields */ var selection =
+          document.getElementsByTagName("select");
+        var costs = document.getElementsByName("cost");
+        for (i = 0; i < selection.length; i++) {
+          var total = selection[i].value * menuItems[i].cost.toFixed(2);
+          costs[i].value = total.toFixed(2);
+        }
+        /* updates total costs according to price changes */ var subtotal = 0;
+        for (i = 0; i < menuItems.length; i++) {
+          subtotal += parseFloat(costs[i].value);
+        }
+        //auto fill totals
+        document.getElementById("subtotal").value = subtotal;
+        document.getElementById("tax").value = parseFloat(
+          subtotal * 0.0625
+        ).toFixed(2);
+        document.getElementById("total").value = parseFloat(
+          subtotal * 1.0625
+        ).toFixed(2);
+      }
+      function MenuItem(name, cost) {
+        this.name = name;
+        this.cost = cost;
+      }
+      menuItems = new Array(
+        new MenuItem("Chicken Chop Suey", 4.5),
+        new MenuItem("Sweet and Sour Pork", 6.25),
+        new MenuItem("Shrimp Lo Mein", 5.25),
+        new MenuItem("Moo Shi Chicken", 6.5),
+        new MenuItem("Fried Rice", 2.35)
+      );
+      function makeSelect(name, minRange, maxRange) {
+        var t = "";
+        t = "<select name='" + name + "' size='1'>";
+        for (j = minRange; j <= maxRange; j++)
+          t += "<option>" + j + "</option>";
+        t += "</select>";
+        return t;
+      }
+      function show(toShow) {
+        if (toShow == 0) {
+          document.getElementsByName("street")[0].style.display = "none";
+          document.getElementsByName("city")[0].style.display = "none";
+        } else {
+          document.getElementsByName("street")[0].style.display = "inline";
+          document.getElementsByName("city")[0].style.display = "inline";
+        }
+      }
+    </script>
+    <h1>Jade Delight</h1>
+    <h2>Get a tasty, hot and delightful meal in a half an hour or less!</h2>
+    <br />
+    <form method="post" action="reciept.php">
+      <p>
+        First Name:
+        <input type="text" name="fname" style="font-family: 'Montserrat" />
+      </p>
+      <p>
+        Last Name*:
+        <input type="text" name="lname" style="font-family: 'Montserrat" />
+      </p>
+      <p>
+        Street:
+        <input type="text" name="street" style="font-family: 'Montserrat" />
+      </p>
+      <p>
+        City: <input type="text" name="city" style="font-family: 'Montserrat" />
+      </p>
+      <p>
+        Phone*:
+        <input
+          type="text"
+          name="phone"
+          style="font-family: 'Montserrat"
+          placeholder="xxx-xxx-xxxx"
+        />
+      </p>
+      <p>Email*: <input type="text" name="email" /></p>
+      <script>
+        document.getElementsByName("street")[0].style.display = "none";
+        document.getElementsByName("city")[0].style.display = "none";
+      </script>
+      <p>
+        <input
+          type="radio"
+          name="orderType"
+          value="pickup"
+          onclick="show(0)"
+          checked="checked"
+          style="font-family: 'Montserrat"
+        />Pickup
+        <input
+          type="radio"
+          name="orderType"
+          value="delivery"
+          onclick="show(1)"
+          style="font-family: 'Montserrat"
+        />
+        Delivery
+      </p>
+      <table border="0" cellpadding="3">
+        <tr>
+          <th>Select Item</th>
+          <th>Item Name</th>
+          <th>Cost Each</th>
+          <th>Total Cost</th>
+        </tr>
+        <script language="javascript">
+          var s = "";
+          for (i = 0; i < menuItems.length; i++) {
+            s += "<tr><td>";
+            s += makeSelect("quan" + i, 0, 10);
+            s += "</td><td>" + menuItems[i].name + "</td>";
+            s += "<td> $ " + menuItems[i].cost.toFixed(2) + "</td>";
+            s += "<td>$<input type='text' name='cost'/></td></tr>";
+          }
+          document.writeln(s);
+        </script>
+        <script>
+          var x = document.getElementsByTagName("select");
+          var y = document.getElementsByName("cost");
+          for (i = 0; i < x.length; i++) {
+            x[i].setAttribute("onchange", "printValues()");
+            y[i].setAttribute("value", "");
+          }
+        </script>
+      </table>
+      <p>Subtotal: $<input type="text" name="subtotal" id="subtotal" /></p>
+      <p>Mass tax 6.25%: $ <input type="text" name="tax" id="tax" /></p>
+      <p>Total: $ <input type="text" name="total" id="total" /></p>
+      <br />
+      <input
+        type="submit"
+        value="Submit Order"
+        onclick="validate()"
+        style="
+          border-radius: 15px;
+          padding: 15px;
+          font-family: 'Vampiro One';
+          font-size: 15pt;
+        "
+      />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js "></script>
+      <script>
+        function isalpha(a_str)
+        {
+        for (var i = 0 ; i < a_str.length;i++)
+        {
+        if (a_str[i] < '0' || a_str[i] > '9')
+        return true;
+        }
+        return false;
+        }
+        function deliveryTime(type_of_order)
+        {
+        var add_min;
+        if (type_of_order == "delivery")
+        {
+        add_mins = 30;
+        }
+        else
+        {
+        add_mins = 15;
+        }
+        var date = new Date();
+        var hours = 0;
+        var minutes = parseInt(date.getMinutes()) + add_mins; if (minutes >= 60) {
+        hours += 1;
+        minutes = minutes % 60;
+        if (minutes < 10) {
+        minutes = "0" + minutes;
+        }
+        }
+        hours = (hours + date.getHours()) % 24;
+        return hours + ":" + minutes;
+        }
+        function validate() {
+        var radios = jQuery("input[type='radio']");
+        var toVal = radios.filter(":checked").val();
+        var time = deliveryTime(toVal);
+        var num = document.getElementsByName("phone")[0].value; var split_num = num.split("-");
+        var isValid = true;
+        //validate city/street
+        if (toVal == "delivery") {
+            if (document.getElementsByName("street")[0].value.trim() == "") {
+                alert("Please enter a street!");
+                isValid = false;
+            }
+            if (document.getElementsByName("city")[0].value.trim() == ""){
+                alert("Please enter a city!");
+                isValid = false;
+            }
+            }
+            //code to validate name
+            if (document.getElementsByName("lname")[0].value.trim() == "") {
+                alert("Please enter a last name!")
+                isValid = false;
+            }
+            //code to validate phone number
+            if ((split_num.length != 3) || (split_num[0].length != 3 || isalpha(split_num[0]))
+            || (split_num[1].length != 3 || isalpha(split_num[1])) || (split_num[2].length != 4 || isalpha(split_num[2]))) { alert("Please enter valid phone number in format of 123-123-1234 (numerical characters only)!")
+            isValid = false;
+            }
+            if (isValid && document.getElementById("total").value == 0) {
+            alert("Please place an order!")
+            return;
+        }
+
+        if (isValid)
+        {
+        if (toVal == "delivery")
+        {
+        alert("Thanks for dining with Jade Delight! Your
+        delivery will be delivered at " + time);
+        }
+        else
+        {
+        alert("Thanks for dining with Jade Delight! Your
+        total is " + document.getElementById("total").value + ". Your pickup will be ready at " + time);
+        }
+        }
+        }
+      </script>
+    </form>
+  </body>
+</html>
